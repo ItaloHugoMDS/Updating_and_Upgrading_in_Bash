@@ -4,6 +4,8 @@ log_error_location='/root/Desktop'  # Defining a location to store the error log
 time_for_update=300  # Time limit for 'update'.
 time_for_upgrade=600  # Time limit for 'upgrade'.
 
+echo -e "Executing update...\n\n"
+
 error_update=$(timeout $time_for_update sudo apt-get update 2>&1 > /dev/null)  # Executing the 'update' command with a
 # limit of 5 minutes to its conclusion. Capturing the STDERR, if it generates any error.
 
