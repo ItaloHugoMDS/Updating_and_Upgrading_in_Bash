@@ -21,7 +21,7 @@ if [ $update_status -ne 0 ]; then  # Checking if the 'update' command wasn't suc
   # Storing the STDERR and the exit status from the 'update' command into a log file.
   exit $update_status  # Exiting the script using the status from 'update' command.
 
-else  # If the 'update' command is successful, the script follows to executing the 'upgrade' command:
+else  # If the 'update' command is successful, the script proceeds by executing the 'upgrade' command:
 
   echo; echo
   echo "Update successful. Code: $update_status"; echo "Executing upgrade..."  # Printing a message that the 'update'
